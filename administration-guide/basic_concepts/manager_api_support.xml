@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE section [
+<!ENTITY % openstack SYSTEM "../administrator-guide.ent">
+%openstack;
+]>
+
+<section xmlns="http://docbook.org/ns/docbook" xml:id="ovirt-api-声明">
+  <title>oVirt API 声明</title>
+  <para>
+    除了 oVirt
+    企业级虚拟化管理中心的管理门户、用户门户和报表门户所提供的用户接口外，oVirt
+    企业级虚拟化还包括了一系列的应用程序接口。其中的一些程序接口被红帽完全支持，其他的一些接口只支持只读访问，而有的接口只在红帽技术支持所要求的情况下才被支持。
+  </para>
+  <section xmlns="http://docbook.org/ns/docbook" xml:id="读写访问都被支持的程序接口">
+    <title>读写访问都被支持的程序接口</title>
+    <para>
+      以下程序接口可以被用来进行读写访问，并被完全支持：
+    </para>
+    <itemizedlist>
+      <listitem>
+        <para>
+          <emphasis role="strong">Representational State Transfer(REST)
+          API</emphasis>
+        </para>
+      </listitem>
+    </itemizedlist>
+    <para>
+      oVirt 企业级虚拟化管理中心抛出的 REST API 被完全支持。
+    </para>
+    <itemizedlist>
+      <listitem>
+        <para>
+          <emphasis role="strong">软件开发套件（SDK）</emphasis>
+        </para>
+      </listitem>
+    </itemizedlist>
+    <para>
+      由 ovirt-engine-sdk-jave 和 ovirt-engine-sdk-python 软件包提供的
+      SDK 被完全支持。
+    </para>
+    <itemizedlist>
+      <listitem>
+        <para>
+          <emphasis role="strong">命令行 Shell</emphasis>
+        </para>
+      </listitem>
+    </itemizedlist>
+    <para>
+      由 vdsm-cli（对 node 进行操作） 和 ovirt-engine-cli（对 engine
+      进行操作） 软件包提供的命令行 shell 被完全支持。
+    </para>
+    <itemizedlist>
+      <listitem>
+        <para>
+          <emphasis role="strong">VDSM Hooks</emphasis>
+        </para>
+      </listitem>
+    </itemizedlist>
+    <para>
+      oVirt
+      企业级虚拟化主机支持用于触发基于管理员门户中特别指定的自定义属性的虚拟机配置的变更的
+      VDSM hooks。运行 oVirt Node 的主机上的 VDSM hooks
+      的使用现在还不被支持。
+    </para>
+  </section>
+  <section xmlns="http://docbook.org/ns/docbook" xml:id="被支持的读访问接口">
+    <title>被支持的读访问接口</title>
+    <para>
+      以下接口只在进行读访问的时候被完全支持。一般情况下，使用它们进行写访问并不被支持，除非红帽的技术支持要求您使用这些接口：
+    </para>
+    <itemizedlist>
+      <listitem>
+        <para>
+          <emphasis role="strong">oVirt
+          企业级虚拟化管理中心的历史数据库</emphasis>
+        </para>
+      </listitem>
+    </itemizedlist>
+    <para>
+      目前仅仅支持 oVirt Manager History Database
+      的读权限，写权限是不允许的。使用了管理指南中指定的数据库视图的
+      oVirt
+      企业级虚拟化管理中心中的历史数据库只支持读访问。不支持写访问。
+    </para>
+    <itemizedlist>
+      <listitem>
+        <para>
+          <emphasis role="strong">虚拟主机上的 Libvirt</emphasis>
+        </para>
+      </listitem>
+    </itemizedlist>
+    <para>
+      使用 <emphasis role="strong">virsh -r</emphasis> 命令对
+      <emphasis role="strong">libvirt</emphasis>
+      进行只读访问是一种被支持的和主机进行交互的方法。但不支持写访问。
+    </para>
+  </section>
+  <section xmlns="http://docbook.org/ns/docbook" xml:id="不支持的接口">
+    <title>不支持的接口</title>
+    <para>
+      与以下接口进行直接交互是不被支持的，除非 oVirt
+      的技术支持对它有特殊的要求。不支持直接交互的接口有：
+    </para>
+    <itemizedlist>
+      <listitem>
+        <para>
+          <emphasis role="strong">vdsClient 命令</emphasis>
+        </para>
+      </listitem>
+    </itemizedlist>
+    <para>
+      除非 oVirt 的技术支持有特定要求，否则不支持使用
+      <emphasis role="strong">vdsClient</emphasis>
+      命令和虚拟主机进行交互。
+    </para>
+    <itemizedlist>
+      <listitem>
+        <para>
+          <emphasis role="strong">oVirt
+          企业级虚拟化宿主机控制台</emphasis>
+        </para>
+      </listitem>
+    </itemizedlist>
+    <para>
+      除了 oVirt
+      提供的一个基于文本的用户配置接口，其它的例如用控制台访问 oVirt
+      企业级虚拟化宿主机都是不允许的，除非有 oVirt
+      的技术支持的特殊要求。
+    </para>
+    <itemizedlist>
+      <listitem>
+        <para>
+          <emphasis role="strong">oVirt
+          企业级虚拟化管理中心数据库</emphasis>
+        </para>
+      </listitem>
+    </itemizedlist>
+    <para>
+      除非 oVirt 的技术支持要求，否则对 oVirt
+      企业级虚拟化管理中心数据库的直接访问与操作都是不被支持的。
+    </para>
+    <important>
+      <para>
+        除非用户可以证明所使用的接口程序有问题，oVirt
+        的技术支持不会为用户调试他们所创建的脚本程序或
+        hook。如果您需要了解更读关于 oVirt 支持的信息，请在
+        ovirt-china@googlegroups.com 提出问题。
+      </para>
+    </important>
+  </section>
+</section>

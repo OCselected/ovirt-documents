@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE section [
+<!ENTITY % openstack SYSTEM "../administrator-guide.ent">
+%openstack;
+]>
+
+<section xmlns="http://docbook.org/ns/docbook" xml:id="管理员门户的组成">
+  <title>管理员门户的组成</title>
+  <para>
+    oVirt 企业级虚拟化的管理门户（Administration
+    Portal）所包括的内容框和菜单有两种使用模式：树形模式和平面模式。树形模式以层次结构显示一个数据中心的内容，而平面模式在一个单一的列表中显示了数据中心中的所有资源。以下是一个用户图形界面的实例。
+  </para>
+  <figure>
+    <title>图形用户界面的主要组成部分</title>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="../images/elements.png" format="PNG" scale="100" />
+      </imageobject>
+      <textobject><phrase>图形用户界面的主要组成部分</phrase></textobject>
+    </mediaobject>
+  </figure>
+  <orderedlist numeration="arabic">
+    <listitem>
+      <para>
+        <emphasis role="strong">头（Header）</emphasis>
+        头包括了当前登录用户的名称、登出键、关于菜单、配置菜单和指南菜单。点关于会显示
+        Red Hat Enterprise Virtualization
+        的版本号，点配置可以配置用户的角色，点指南可以进入到您现在正在阅读的本指南。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        <emphasis role="strong">搜索条（Search Bar）</emphasis>
+        您可以使用搜索条来创建查询条件，对 oVirt
+        企业级虚拟化环境中的资源（如主机、集群）进行搜索。您可以进行“列出系统中的所有主机”这样简单的查询，也可以创造非常复杂的查询条件来搜索满足特定条件的资源。当您在输入搜索条件时，系统会自动为您提供一些可能的选择条件来帮助您创建所需的搜索条件。您可以点搜索框边上的”星形“图标来把您的搜索保存为书签。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        <emphasis role="strong">资源标签（Resource Tab）</emphasis>
+        所有的资源都可以通过相应的标签进行管理。<emphasis role="strong">事件</emphasis>标签允许您查看每个资源的事件。管理员门户提供了如下标签：<emphasis role="strong">数据中心</emphasis>,<emphasis role="strong">集群</emphasis>，<emphasis role="strong">主机</emphasis>，<emphasis role="strong">网络</emphasis>，<emphasis role="strong">存储</emphasis>，<emphasis role="strong">磁盘</emphasis>，<emphasis role="strong">虚拟机</emphasis>，<emphasis role="strong">池</emphasis>，<emphasis role="strong">模版</emphasis>，<emphasis role="strong">卷</emphasis>，<emphasis role="strong">用户</emphasis>，<emphasis role="strong">域</emphasis>，<emphasis role="strong">VM
+        Backup</emphasis>和<emphasis role="strong">事件</emphasis>。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        <emphasis role="strong">结果列表（Results List）</emphasis>
+        您可以选择结果列表中的项，并点所需要的操作键来对所选项进行操作。您所选择的项的信息会在“详情框”中显示。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        <emphasis role="strong">详情框（Details Pane）</emphasis>
+        详情框显示了在结果列表中被选择的一个项的详细信息。如果您在结果列表中选择了多个项，详情框将显示第一个被选择的项的详细信息。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        <emphasis role="strong">系统/书签/标签框（System/Bookmarks/Tags
+        Pane）</emphasis>
+        “系统框”以分级结构的方式显示了虚拟环境中的资源信息。“书签（Bookmark）”被用来存储那些常用的、或复杂的搜索条件以便重复使用。“书签”可以被添加，删除或修改。用户可以为一组资源加一个“标签（Tag）”，并通过标签对资源进行查询。点右上角的最小化箭头可以最小化系统/书签/标签框。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        <emphasis role="strong">警告/事件框（Alerts/Events
+        Pane）</emphasis>
+        <emphasis role="strong">警告</emphasis>标签页显示了所有重要的事件，如出现的错误和警告。<emphasis role="strong">事件</emphasis>标签页显示了所有资源中的事件。<emphasis role="strong">任务</emphasis>标签页显示了当前正在执行的任务。您可以通过点最大化/最小化键来显示这个框。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        <emphasis role="strong">刷新间隔（Refresh Rate）</emphasis>
+        您可以通过点门户右上方的刷新图标来使用“刷新间隔”菜单来为管理门户设置刷新频率（以秒为单位）。为了避免用户已进行的操作和这个操作被门户所显示之间的时间延迟，门户会在一个事件发生时自动刷新它的显示，而不受刷新频率的限制。
+      </para>
+    </listitem>
+  </orderedlist>
+</section>

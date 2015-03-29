@@ -1,0 +1,10 @@
+<section xmlns="http://docbook.org/ns/docbook"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  version="5.0">
+<title>配置窗口</title>
+  <xi:include href="role.xml"/>
+  <xi:include href="system_permissions.xml"/>
+  <xi:include href="cluster_policies.xml"/>
+  <xi:include href="instance_types.xml"/>
+</section>

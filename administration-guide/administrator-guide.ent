@@ -1,0 +1,9 @@
+<!ENTITY PRODUCT "Documents">
+<!ENTITY BOOKID "administrator-guide">
+<!ENTITY YEAR "2014">
+<!ENTITY HOLDER "| Comapny name |">
+<!ENTITY OVIRT " product name ">
+<!ENTITY OVIRT_STORAGE " product Storage ">
+<!ENTITY MANAGER "manager">
+<!ENTITY NODE "node">
+<!ENTITY DEFAULT_LOGICAL_NETWORK "management network">

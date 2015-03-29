@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE section [
+<!ENTITY % openstack SYSTEM "../administrator-guide.ent">
+%openstack;
+]>
+<chapter xmlns="http://docbook.org/ns/docbook"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  version="5.0"
+  xml:id="basic_concepts_Introduction">
+  <title>介绍</title>
+  <xi:include href="manager_architecture.xml"/>
+  <xi:include href="manager_system_components.xml"/>
+  <xi:include href="manager_resources.xml"/>
+  <xi:include href="manager_api_support.xml"/>
+  <xi:include href="manage_and_maintain_manager.xml"/>
+</chapter>

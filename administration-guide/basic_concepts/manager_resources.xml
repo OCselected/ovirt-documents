@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE section [
+<!ENTITY % openstack SYSTEM "../administrator-guide.ent">
+%openstack;
+]>
+
+<section xmlns="http://docbook.org/ns/docbook" xml:id="ovirt-资源">
+  <title>oVirt 资源</title>
+  <para>
+    总的来讲，oVirt
+    企业级虚拟化环境的资源分为以下两类：物理资源和逻辑资源。顾名思义，物理资源指的是那些物理存在的资源，比如主机和存储服务器。相反的，逻辑资源是指非物理存在的资源，比如逻辑网络和虚拟机模板等。
+  </para>
+  <itemizedlist>
+    <listitem>
+      <para>
+        <emphasis role="strong">数据中心</emphasis> - 数据中心是 oVirt
+        系统中最高级别的容器（container），它包含了所有物理资源和逻辑资源（集群，虚拟机，存储和网络）。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        <emphasis role="strong">集群</emphasis> -
+        一个集群由多个物理主机组成，它可以被认为是一个为虚拟机提供资源的资源池。同一个集群中的主机共享相同的网络和存储设备，它们组成为一个迁移域，虚拟机可以在这个迁移域中的主机间进行迁移。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        <emphasis role="strong">逻辑网络</emphasis> -
+        逻辑网络就是一个物理网络的逻辑代表。逻辑网络把
+        Manager、主机、存储设备和虚拟机之间的网络流量分隔为不同的组。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        <emphasis role="strong">主机</emphasis> -
+        主机就是一个物理的服务器，在它上面可以运行一个或多个虚拟机。主机会被组成为不同的集群，虚拟机可以在同一个集群中的主机间进行迁移。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        <emphasis role="strong">存储池</emphasis> -
+        存储池就是一个特定存储类型（如 iSCSI、光纤、NFS 或
+        POSIX）映像存储仓库的逻辑代表。每个存储池可以包括多个域，用来存储磁盘映像、ISO映像或用来导入和导出虚拟机映像。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        <emphasis role="strong">虚拟机</emphasis> -
+        虚拟机就是包括了一个操作系统和一组应用程序的虚拟台式机（virtual
+        desktop）或虚拟服务器（virtual
+        server）。多个相同的虚拟机可以在一个<emphasis role="strong">池（pool）</emphasis>中创建。一般用户可以访问虚拟机，而有特定权限的用户可以创建、管理或删除虚拟机。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        <emphasis role="strong">模板</emphasis> -
+        模板就是包括了一些特定预设置的虚拟机模型，一个基于某个模板的虚拟机会继承模板中的设置。使用模板是创建大量虚拟机的最快捷的方法。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        <emphasis role="strong">虚拟机池</emphasis> -
+        虚拟机池就是一组可以被用户使用的、具有相同配置的虚拟机。虚拟机池可以被用来满足用户不同的需求，如为市场部门创建一个专用的虚拟机池，而为研发部门创建另一个虚拟机池。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        <emphasis role="strong">快照（snapshot）</emphasis> -
+        快照就是一个虚拟机在某个特定时间点上的操作系统和应用程序的记录。在安装新的应用程序或对系统进行升级前，用户可以为虚拟机创建一个快照。当系统出现问题时，用户可以使用快照来把虚拟机恢复到它原来的状态。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        <emphasis role="strong">用户类型</emphasis> - oVirt
+        企业级虚拟化管理中心支持多级的管理员和用户，不同级别的管理员和用户会有不同的权限。系统管理员有权利管理系统级别的物理资源，如数据中心、主机和存储。而用户在获得了相应权利后可以使用单独的虚拟机或虚拟机池中的虚拟机。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        <emphasis role="strong">事件和监控</emphasis> -
+        与事件相关的提示、警告等信息。管理员可以使用它们来帮助监控资源的状态和性能。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        <emphasis role="strong">报表（report）</emphasis> - 基于
+        JasperReports
+        的报表模块所产出的各种报表，以及从数据仓库中获得的各种报表。
+        报表模块可以生成预定义的报表，也可以生成 ad
+        hoc（特设的）报表。用户也可以使用支持 SQL
+        的查询工具来从数据仓库中收集相关的数据（如主机、虚拟机和存储设备的数据）来生成报表。
+      </para>
+    </listitem>
+  </itemizedlist>
+</section>

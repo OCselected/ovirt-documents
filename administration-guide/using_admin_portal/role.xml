@@ -1,0 +1,9 @@
+<section xmlns="http://docbook.org/ns/docbook"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  version="5.0">
+<title>角色</title>
+  <xi:include href="create_new_role.xml"/>
+  <xi:include href="edit_or_copy_role.xml"/>
+  <xi:include href="user_role_and_permissions_example.xml"/>
+</section>

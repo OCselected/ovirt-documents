@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE section [
+<!ENTITY % openstack SYSTEM "../administrator-guide.ent">
+%openstack;
+]>
+
+<section xmlns="http://docbook.org/ns/docbook" xml:id="新建实例类型">
+  <title>新建实例类型</title>
+  <formalpara><title>概述</title><para></para></formalpara>
+  <para>
+    管理源可以新建一个类型来供用户新建或编辑虚拟机时使用。
+  </para>
+  <para>
+    <emphasis role="strong">新建实例类型</emphasis>
+  </para>
+  <orderedlist numeration="arabic">
+    <listitem>
+      <para>
+        点击头部栏的<emphasis role="strong">配置</emphasis>按钮，打开配置窗口。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        点击<emphasis role="strong">类型</emphasis>标签。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        点击<emphasis role="strong">新建</emphasis>按钮，打开<emphasis role="strong">新建实例类型</emphasis>菜单。
+      </para>
+    </listitem>
+  </orderedlist>
+  <figure>
+    <title>新建实例类型</title>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="../images/New-Instance-Type.png" format="PNG" scale="100" />
+      </imageobject>
+      <textobject><phrase>新建实例类型</phrase></textobject>
+    </mediaobject>
+  </figure>
+  <orderedlist numeration="arabic">
+    <listitem override="4">
+      <para>
+        在<emphasis role="strong">常规</emphasis>标签中填入<emphasis role="strong">名称</emphasis>和<emphasis role="strong">描述</emphasis>，其他字段可以使用默认值，也可以根据需要自主修改。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        依次点击<emphasis role="strong">系统</emphasis>、<emphasis role="strong">控制台</emphasis>、<emphasis role="strong">主机</emphasis>、<emphasis role="strong">高可用性</emphasis>、<emphasis role="strong">资源分配</emphasis>、<emphasis role="strong">引导选项</emphasis>、<emphasis role="strong">随机数生成器</emphasis>等标签来定义所需类型属性。这些设置会在<emphasis role="strong">新建虚拟机</emphasis>窗口的相关字段上&gt;显示。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        点击<emphasis role="strong">确定</emphasis>，新建类型，并关闭窗口。
+      </para>
+    </listitem>
+  </orderedlist>
+  <formalpara><title>结果</title><para></para></formalpara>
+  <para>
+    新建的<emphasis role="strong">类型</emphasis>将显示在<emphasis role="strong">配置</emphasis>窗口的<emphasis role="strong">类型</emphasis>标签下，当创建或者编辑虚拟机时，可以在<emphasis role="strong">类型</emphasis>下拉菜单中选择该类型。
+  </para>
+</section>

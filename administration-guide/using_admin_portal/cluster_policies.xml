@@ -1,0 +1,8 @@
+<section xmlns="http://docbook.org/ns/docbook"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  version="5.0">
+<title>集群策略</title>
+  <xi:include href="create_new_cluster_policy.xml"/>
+  <xi:include href="new_and_edit_cluster_policy_settings_explained.xml"/>
+</section>

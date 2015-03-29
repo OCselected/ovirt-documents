@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE section [
+<!ENTITY % openstack SYSTEM "../administrator-guide.ent">
+%openstack;
+]>
+
+<section xmlns="http://docbook.org/ns/docbook" xml:id="用户属性">
+  <title>用户属性</title>
+  <para>
+    角色和权限是用户所具有的属性。角色是预先定义的一组可以访问不同级别的物理和虚拟资源的权利。多层的管理机制提供了一个&quot;细颗粒（finely
+    grained）&quot;的权限分级结构。例如，一个数据中心的管理员可以管理这个数据中心中的所有对象，而一个主机管理员只有对这个物理主机的管理权限。一个用户可以有权限使用一个虚拟机，但没有权限为虚拟机的设置进行任何改变；而另一个用户可以有权限来配置一个虚拟机。
+  </para>
+</section>

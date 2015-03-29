@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE section [
+<!ENTITY % openstack SYSTEM "../administrator-guide.ent">
+%openstack;
+]>
+<chapter xmlns="http://docbook.org/ns/docbook"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  version="5.0"
+  xml:id="chap-Documents-administrator-guide-Chapter-using-guide">
+    <title>手册使用向导</title>
+    <para>
+        This is a test paragraph
+    </para>
+    <section xmlns="http://docbook.org/ns/docbook" xml:id="sect-Documents-administrator-guide-Chapter-using-guide-Section_1">
+        <title>阅读管理员手册前的准备</title>
+        <para>
+            This is a test paragraph in a section
+        </para>
+    </section>
+
+    <section xmlns="http://docbook.org/ns/docbook" xml:id="sect-Documents-administrator-guide-Chapter-using-guide-Section_2">
+        <title>本手册的层次结构</title>
+        <para>
+            This is a test paragraph in Section 2
+            <orderedlist>
+                <listitem>
+                    <para>
+                        This is a test listitem.
+                    </para>
+                </listitem>
+            </orderedlist>
+        </para>
+    </section>
+
+    <section xmlns="http://docbook.org/ns/docbook" xml:id="sect-Documents-administrator-guide-Chapter-using-guide-Section_3">
+        <title>流程实例</title>
+        <para>
+        </para>
+           <section xmlns="http://docbook.org/ns/docbook" xml:id="sect-Documents-administrator-guide-Chapter-using-guide-Section_3-1">
+                <title>概览</title>
+                <para>
+                </para>
+           </section>
+           <section xmlns="http://docbook.org/ns/docbook" xml:id="sect-Documents-administrator-guide-Chapter-using-guide-Section_3-2">
+                <title>流程示例之创建iscsi数据中心</title>
+                <para>
+                </para>
+           </section>
+           <section xmlns="http://docbook.org/ns/docbook" xml:id="sect-Documents-administrator-guide-Chapter-using-guide-Section_3-3">
+                <title>流程示例之负载</title>
+                <para>
+                </para>
+           </section>
+           <section xmlns="http://docbook.org/ns/docbook" xml:id="sect-Documents-administrator-guide-Chapter-using-guide-Section_3-4">
+                <title>流程示例之供用户组使用的模板</title>
+                <para>
+                </para>
+           </section>
+    </section>
+</chapter>

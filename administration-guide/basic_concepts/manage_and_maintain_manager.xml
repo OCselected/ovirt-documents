@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE section [
+<!ENTITY % openstack SYSTEM "../administrator-guide.ent">
+%openstack;
+]>
+
+<section xmlns="http://docbook.org/ns/docbook" xml:id="管理和维护-ovirt-环境">
+  <title>管理和维护 oVirt 环境</title>
+  <para>
+    oVirt
+    企业级虚拟化环境需要一个系统管理员来维持整个系统的良好运行。作为一个系统管理员，他的任务包括:
+  </para>
+  <itemizedlist>
+    <listitem>
+      <para>
+        管理物理资源和虚拟资源（例如主机和虚拟机）。这包括升级主机，添加新的主机，导入域，转换创建在其他环境中宿主机上的管理虚拟机池。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        为潜在问题（例如一台主机上的负载超负荷；内存不足或磁盘空间不足）监控整个系统的资源，并解决这个问题（例如将虚拟机迁移到其它主机上以缓解负载超负荷或者通过关机释放资源。）
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        满足普通用户对虚拟机使用的一些新的需求，比如升级虚拟机的操作系统或为虚拟机分配更多的内存。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        使用标签管理一些自定义的对象属性。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        管理被保存为公共书签的搜索。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        管理用户设置并设置权限级别。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        对系统整体功能中出现问题的用户以及虚拟机进行故障排除。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        生成报表。
+      </para>
+    </listitem>
+  </itemizedlist>
+</section>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE section [
+<!ENTITY % openstack SYSTEM "../administrator-guide.ent">
+%openstack;
+]>
+
+<section xmlns="http://docbook.org/ns/docbook" xml:id="ovirt-架构">
+  <title>oVirt 架构</title>
+  <para>
+    oVirt 企业级虚拟化环境包括：
+  </para>
+  <itemizedlist>
+    <listitem>
+      <para>
+        <emphasis role="strong">主机（host）</emphasis>：基于 KVM
+        的、用来运行虚拟机的主机。在本文档中有时也被称为虚拟主机。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        <emphasis role="strong">代理和工具程序</emphasis>：运行在主机上的代理和工具程序（包括
+        VDSM、QEMU 和
+        libvirt）。这些工具程序提供了对虚拟机、网络和存储进行本地管理的功能。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        <emphasis role="strong">oVirt
+        企业级虚拟化管理中心</emphasis>：一个对 oVirt
+        企业级虚拟化环境进行集中管理的图形界面平台。用户可以使用它查看、增添和管理资源。在本文档中有时把它简称为“Manager”。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        <emphasis role="strong">存储域</emphasis>：用来存储虚拟资源（如虚拟机、模板和
+        ISO 文件）。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        <emphasis role="strong">数据库</emphasis>：用来跟踪记录整个环境的变化和状态。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        <emphasis role="strong">目录服务器</emphasis>：用来提供用户账户以及相关的用户验证功能的外部目录服务器。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        <emphasis role="strong">网络</emphasis>：用来把整个环境联系在一起。它包括物理网络连接和逻辑网络。
+      </para>
+    </listitem>
+  </itemizedlist>
+  <figure>
+    <title>oVirt 架构</title>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="../images/ovirt_architecture.png" format="PNG" scale="100" />
+      </imageobject>
+      <textobject><phrase>oVirt 架构</phrase></textobject>
+    </mediaobject>
+  </figure>
+</section>

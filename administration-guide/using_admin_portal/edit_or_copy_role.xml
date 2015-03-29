@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE section [
+<!ENTITY % openstack SYSTEM "../administrator-guide.ent">
+%openstack;
+]>
+
+<section xmlns="http://docbook.org/ns/docbook" xml:id="编辑或复制一个角色">
+  <title>编辑或复制一个角色</title>
+  <formalpara><title>概述</title><para></para></formalpara>
+  <para>
+    您可以编辑新创建的角色，但不能修改默认的角色。如果需要修改默认的角色，您需要先克隆它后才可以进行修改。
+  </para>
+  <para>
+    <emphasis role="strong">编辑或复制一个角色</emphasis>
+  </para>
+  <orderedlist numeration="arabic">
+    <listitem>
+      <para>
+        在页头条中点<emphasis role="strong">配置</emphasis>按钮打开<emphasis role="strong">配置</emphasis>窗口。这个窗口会显示所有默认的用户和管理角色，以及自定义的角色。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        选择你想修改的那个角色。点击<emphasis role="strong">编辑</emphasis>，会弹出<emphasis role="strong">编辑角色</emphasis>窗口；或者点击<emphasis role="strong">复制</emphasis>，会弹出<emphasis role="strong">复制角色</emphasis>的窗口。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        如果有需要，可以对角色的<emphasis role="strong">名称</emphasis>和<emphasis role="strong">描述</emphasis>进行编辑。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        点击<emphasis role="strong">展开所有</emphasis>或<emphasis role="strong">隐藏所有</emphasis>按钮来查看<emphasis role="strong">允许操作的复选框</emphasis>列表中列出来的更多的对象权限。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        在每个对象上，选择或清除您想要为当前正在编辑的角色添加或者取消的操作。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        点击<emphasis role="strong">确定</emphasis>。
+      </para>
+    </listitem>
+  </orderedlist>
+  <formalpara><title>结果</title><para></para></formalpara>
+  <para>
+    您编辑了一个角色的属性或克隆了一个角色。
+  </para>
+</section>

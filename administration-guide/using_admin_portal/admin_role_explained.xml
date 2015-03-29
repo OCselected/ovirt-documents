@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE section [
+<!ENTITY % openstack SYSTEM "../administrator-guide.ent">
+%openstack;
+]>
+
+<section xmlns="http://docbook.org/ns/docbook" xml:id="管理员角色的介绍">
+  <title>管理员角色的介绍</title>
+  <para>
+    下表描述了可以通过管理门户访问和配置资源的基本管理员角色。
+  </para>
+  <table>
+    <title>oVirt 企业级虚拟化基本用户角色</title><tgroup cols="3">
+      <colspec align="left" />
+      <colspec align="left" />
+      <colspec align="left" />
+      <thead>
+        <row>
+          <entry><para>
+            角色
+          </para></entry>
+          <entry><para>
+            权利
+          </para></entry>
+          <entry><para>
+            备注
+          </para></entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry><para>
+            <emphasis role="strong">SuperUser</emphasis>
+          </para></entry>
+          <entry><para>
+            oVirt 企业级虚拟化环境的系统管理员。
+          </para></entry>
+          <entry><para>
+            具有访问所有对象的权限并可以管理所有数据中心中的全部对象。
+          </para></entry>
+        </row>
+        <row>
+          <entry><para>
+            <emphasis role="strong">ClusterAdmin</emphasis>
+          </para></entry>
+          <entry><para>
+            集群管理员。
+          </para></entry>
+          <entry><para>
+            具有一个特定集群下的所有资源的管理权限。
+          </para></entry>
+        </row>
+        <row>
+          <entry><para>
+            <emphasis role="strong">DataCenterAdmin</emphasis>
+          </para></entry>
+          <entry><para>
+            数据中心管理员。
+          </para></entry>
+          <entry><para>
+            具有一个特定数据中心中除了存储以外的所有资源的管理权限。
+          </para></entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
+  <important>
+    <para>
+      您需要在目录管理服务器上单独创建一个用户来作为 oVirt
+      企业级虚拟化的管理员，而不要使用目录服务器本身的管理员作为 oVirt
+      企业级虚拟化的管理员。
+    </para>
+  </important>
+  <para>
+    下表介绍了高级管理员角色，使用这些角色可以更精确地控制用户通过管理门户访问资源的权限。
+  </para>
+  <table>
+    <title>oVirt
+    企业级虚拟化高级系统管理员角色</title><tgroup cols="3">
+      <colspec align="left" />
+      <colspec align="left" />
+      <colspec align="left" />
+      <thead>
+        <row>
+          <entry><para>
+            角色
+          </para></entry>
+          <entry><para>
+            权利
+          </para></entry>
+          <entry><para>
+            备注
+          </para></entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry><para>
+            <emphasis role="strong">TemplateAdmin</emphasis>
+          </para></entry>
+          <entry><para>
+            一个虚拟机模板的管理员。
+          </para></entry>
+          <entry><para>
+            可以创建、删除和配置模板中的存储域和网络，并可以在不同域间移动模板。
+          </para></entry>
+        </row>
+        <row>
+          <entry><para>
+            <emphasis role="strong">StorageAdmin</emphasis>
+          </para></entry>
+          <entry><para>
+            存储管理员。
+          </para></entry>
+          <entry><para>
+            可以创建、删除、配置和管理一个被分配的存储域。
+          </para></entry>
+        </row>
+        <row>
+          <entry><para>
+            <emphasis role="strong">HostAdmin</emphasis>
+          </para></entry>
+          <entry><para>
+            主机管理员。
+          </para></entry>
+          <entry><para>
+            可以附加、删除、配置和管理一个特定的主机。
+          </para></entry>
+        </row>
+        <row>
+          <entry><para>
+            <emphasis role="strong">NetworkAdmin</emphasis>
+          </para></entry>
+          <entry><para>
+            网络管理员。
+          </para></entry>
+          <entry><para>
+            可以配置和管理一个特定数据中心或集群中的网络。一个数据中心或集群的网络管理员同时也继承了这个数据中心或集群中的虚拟机上的网络权限。
+          </para></entry>
+        </row>
+        <row>
+          <entry><para>
+            <emphasis role="strong">VmPoolAdmin</emphasis>
+          </para></entry>
+          <entry><para>
+            一个虚拟机池的系统管理员。
+          </para></entry>
+          <entry><para>
+            可以创建、删除和配置一个虚拟机池；添加和删除池用户；在池中的虚拟机上进行基本的操作。
+          </para></entry>
+        </row>
+        <row>
+          <entry><para>
+            <emphasis role="strong">GlusterAdmin</emphasis>
+          </para></entry>
+          <entry><para>
+            Gluster 存储管理员。
+          </para></entry>
+          <entry><para>
+            可以创建、删除、配置和管理 Gluster 存储域。
+          </para></entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
+</section>

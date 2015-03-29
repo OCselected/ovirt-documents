@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE section [
+<!ENTITY % openstack SYSTEM "../administrator-guide.ent">
+%openstack;
+]>
+
+<section xmlns="http://docbook.org/ns/docbook" xml:id="编辑实例类型">
+  <title>编辑实例类型</title>
+  <formalpara><title>概述</title><para></para></formalpara>
+  <para>
+    可以在<emphasis role="strong">配置</emphasis>窗口中编辑已存在的实例类型。
+  </para>
+  <para>
+    <emphasis role="strong">编辑实例类型</emphasis>
+  </para>
+  <orderedlist numeration="arabic">
+    <listitem>
+      <para>
+        选择要编辑的实例类型。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        点击<emphasis role="strong">编辑</emphasis>按钮，打开<emphasis role="strong">编辑实例类型</emphasis>窗口。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        根据需要更改<emphasis role="strong">常规，系统，控制台，主机，高可用，资源分配，引导选项</emphasis>以及<emphasis role="strong">随机生成器</emphasis>等字段。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        点击<emphasis role="strong">确定</emphasis>保存更改。
+      </para>
+    </listitem>
+  </orderedlist>
+  <formalpara><title>结果</title><para></para></formalpara>
+  <para>
+    已经更改了实例类型的属性，新建的虚拟机或者已经附加了该实例类型的虚拟机都将使用新的配置。
+  </para>
+</section>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE section [
+<!ENTITY % openstack SYSTEM "../administrator-guide.ent">
+%openstack;
+]>
+
+<section xmlns="http://docbook.org/ns/docbook" xml:id="创建集群策略">
+  <title>创建集群策略</title>
+  <formalpara><title>概述</title><para></para></formalpara>
+  <para>
+    你可以为 oVirt
+    虚拟化管理中心中的集群创建新的集群策略来定义分布在该集群中虚拟机的控制逻辑。
+  </para>
+  <para>
+    <emphasis role="strong">创建一个集群策略</emphasis>
+  </para>
+  <orderedlist numeration="arabic">
+    <listitem>
+      <para>
+        点击管理门户中头部栏上的<emphasis role="strong">配置</emphasis>按钮，打开<emphasis role="strong">配置</emphasis>窗口。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        点击<emphasis role="strong">集群策略</emphasis>，查看该标签。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        点击<emphasis role="strong">新建</emphasis>，打开<emphasis role="strong">新建集群策略</emphasis>窗口。
+      </para>
+    </listitem>
+  </orderedlist>
+  <figure>
+    <title>新建集群策略窗口</title>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="../images/New-Cluster-Policies.png" format="PNG" scale="100" />
+      </imageobject>
+      <textobject><phrase>新建集群策略窗口</phrase></textobject>
+    </mediaobject>
+  </figure>
+  <orderedlist numeration="arabic">
+    <listitem override="4">
+      <para>
+        填写集群策略的<emphasis role="strong">名称</emphasis>和<emphasis role="strong">描述</emphasis>。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        配置过滤器模块：
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        在过滤器模块这部分，拖动<emphasis role="strong">已禁用过滤器</emphasis>中内容到<emphasis role="strong">已器用过滤器</emphasis>中来实现功能。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        某个特定的过滤器模块可以被设置为第一个，拥有最高优先权，或者设置为最后一个，拥有最低优先权。这是最基本的优化。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        配置权重（weights）模块
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        在<emphasis role="strong">过滤器模块</emphasis>这部分，拖动<emphasis role="strong">已禁用过滤器</emphasis>中内容到<emphasis role="strong">已器用过滤器</emphasis>中来实现功能。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        使用左边的 <emphasis role="strong">+</emphasis> 和
+        <emphasis role="strong">-</emphasis>
+        按钮来增加或减少这个模块的权重。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        指定一个负载均衡策略：
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        从<emphasis role="strong">负载平衡器</emphasis>项中的下拉菜单中选择需要在集群策略中应用的负载均衡策略。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        在<emphasis role="strong">属性</emphasis>项中的下拉菜单中选择需要在集群策略中应用的负载均衡属性，在属性右面的输入框中为相应的属性设定一个值。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        使用<emphasis role="strong">+</emphasis>和<emphasis role="strong">-</emphasis>按钮来添加或去除属性
+        。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        点击<emphasis role="strong">确定</emphasis>。
+      </para>
+    </listitem>
+  </orderedlist>
+  <formalpara><title>结果</title><para></para></formalpara>
+  <para>
+    新的集群策略已经被创建，可以在 oVirt 虚拟化管理中心中使用了。
+  </para>
+</section>

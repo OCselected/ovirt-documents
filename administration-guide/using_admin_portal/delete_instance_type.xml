@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE section [
+<!ENTITY % openstack SYSTEM "../administrator-guide.ent">
+%openstack;
+]>
+
+<section xmlns="http://docbook.org/ns/docbook" xml:id="删除实例类型">
+  <title>删除实例类型</title>
+  <formalpara><title>概述</title><para></para></formalpara>
+  <para>
+    从 oVirt 虚拟化管理中心删除一个实例类型。
+  </para>
+  <para>
+    <emphasis role="strong">删除实例类型</emphasis>
+  </para>
+  <orderedlist numeration="arabic">
+    <listitem>
+      <para>
+        选择要删除的实例类型
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        点击<emphasis role="strong">删除</emphasis>按钮，打开删除实例类型窗口。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        如果有虚拟机附加到该实例类型，则会弹出警告框。若要继续删实例类型，勾选<emphasis role="strong">批准操作</emphasis>复选框，否则点击<emphasis role="strong">取消</emphasis>。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        点击<emphasis role="strong">确定</emphasis>。
+      </para>
+    </listitem>
+  </orderedlist>
+  <formalpara><title>结果</title><para></para></formalpara>
+  <para>
+    该实例类型一从<emphasis role="strong">实例类型</emphasis>列表删除，以后创建虚拟机时其将不可用。之前附加到该实类型上的虚拟机将被附加到<emphasis role="strong">自定义</emphasis>类型上。
+  </para>
+</section>

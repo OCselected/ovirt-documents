@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE section [
+<!ENTITY % openstack SYSTEM "../administrator-guide.ent">
+%openstack;
+]>
+
+<section xmlns="http://docbook.org/ns/docbook" xml:id="用户角色和管理员角色">
+  <title>用户角色和管理员角色</title>
+  <para>
+    oVirt
+    企业级虚拟化系统提供了一组预先配置好的角色，这些角色的权限从具有整个系统级别的管理员权限，到只能访问一个独立虚拟机的最终用户权限。您无法改变或删除系统默认的角色，但您可以克隆它们后再修改新的角色，或根据您的需求创建新的角色。角色被分为两类：
+  </para>
+  <itemizedlist>
+    <listitem>
+      <para>
+        系统角色：允许登录到<emphasis>管理门户</emphasis>来操作物理或者虚拟资源。一个有系统管理权限角色的用户可以在<emphasis>用户门户</emphasis>里执行角色所允许的操作，但是不会影响到用户能在<emphasis>用户门户</emphasis>能看到的资源。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        用户角色：允许用户登录到<emphasis>用户门户</emphasis>来管理或者访问虚拟机与模板。一个用户角色决定了该角色的用户能在<emphasis>用户门户</emphasis>看到什么样的资源，用户所赋予的管理员角色决定了该用户在<emphasis>用户门户</emphasis>能否对看得到的资源做操作
+      </para>
+    </listitem>
+  </itemizedlist>
+  <para>
+    例如，如果你对某一个集群有<emphasis role="strong">管理员</emphasis>角色，你可以在<emphasis>管理门户</emphasis>下管理该集群下的所有虚拟机。但是，你不能在<emphasis>用户门户</emphasis>访问到这里面的任何一台虚拟机，这需要一个<emphasis role="strong">用户</emphasis>角色。
+  </para>
+</section>

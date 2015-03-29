@@ -1,0 +1,10 @@
+<section xmlns="http://docbook.org/ns/docbook"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  version="5.0">
+<title>系统权限</title>
+  <xi:include href="user_properties.xml"/>
+  <xi:include href="user_role_and_admin_role.xml"/>
+  <xi:include href="user_role_explained.xml"/>
+  <xi:include href="admin_role_explained.xml"/>
+</section>

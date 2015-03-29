@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE section [
+<!ENTITY % openstack SYSTEM "../administrator-guide.ent">
+%openstack;
+]>
+
+<section xmlns="http://docbook.org/ns/docbook" xml:id="把搜索条件保存为书签">
+  <title>把搜索条件保存为书签</title>
+  <para>
+    <emphasis role="strong">简介</emphasis>
+  </para>
+  <para>
+    一个搜索条件可以被存成一个书签，并和其它用户共享这个书签。
+  </para>
+  <para>
+    <emphasis role="strong">把搜索条件保存为书签</emphasis>
+  </para>
+  <orderedlist numeration="arabic">
+    <listitem>
+      <para>
+        在搜索栏里输入想要查询的搜索条件，开始执行这个搜索。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        查询完，点击搜索栏右边的五角星形状的<emphasis role="strong">书签</emphasis>按钮，弹出<emphasis role="strong">新建书签</emphasis>窗口。
+      </para>
+    </listitem>
+  </orderedlist>
+  <figure>
+    <title>书签按钮</title>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="../images/basic-bookmark.png" format="PNG" scale="100" />
+      </imageobject>
+      <textobject><phrase>书签按钮</phrase></textobject>
+    </mediaobject>
+  </figure>
+  <orderedlist numeration="arabic">
+    <listitem override="3">
+      <para>
+        输入书签的<emphasis role="strong">名称</emphasis>。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        如果需要的话，可以对<emphasis role="strong">搜索字符串</emphasis>进行编辑。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        点击<emphasis role="strong">确定</emphasis>将搜索条件保存为一个书签并关闭该窗口。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        查询条件已经被保存，点击左侧面板的<emphasis role="strong">书签</emphasis>标签便可查看。
+      </para>
+    </listitem>
+  </orderedlist>
+  <formalpara><title>结果</title><para></para></formalpara>
+  <para>
+    您已经成功的将一个搜索条件保存为了一个书签以便日后使用。
+    您可以在书签框中查找并选择书签。
+  </para>
+</section>

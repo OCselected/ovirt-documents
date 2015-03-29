@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE section [
+<!ENTITY % openstack SYSTEM "../administrator-guide.ent">
+%openstack;
+]>
+
+<section xmlns="http://docbook.org/ns/docbook" xml:id="使用向导">
+  <title>使用向导</title>
+  <para>
+    当创建像数据中心和集群这样的资源时，有许多任务一定要依次完成。<emphasis role="strong">引导操作</emphasis>会提示您进行适合当前您正在配置的资源的任务。您可以在任何时候通过点击资源工具栏中的<emphasis role="strong">引导操作</emphasis>按钮访问<emphasis role="strong">引导操作</emphasis>窗口。
+  </para>
+  <figure>
+    <title>数据中心的引导操作</title>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="../images/basic-guide-me.png" format="PNG" scale="100" />
+      </imageobject>
+      <textobject><phrase>数据中心的引导操作</phrase></textobject>
+    </mediaobject>
+  </figure>
+</section>
