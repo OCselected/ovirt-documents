@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE section [
+<!ENTITY % openstack SYSTEM "../administrator-guide.ent">
+%openstack;
+]>
+
+<section xmlns="http://docbook.org/ns/docbook" xml:id="重新初始化数据中心">
+  <title>重新初始化数据中心</title>
+  <para>
+    当您的数据中心中的主数据域中的数据出现问题时，您需要使用一个新的主数据域来替换您当前的主数据域。重新初始化一个数据中心就可以为您恢复与这个数据中心相关的所有资源，包括集群、主机和没有问题的存储域。
+  </para>
+  <para>
+    当数据中心重新初始化之后，用户可以从导出域导入之前备份的虚拟机或者模板到新的主数据域。
+  </para>
+  <para>
+    <emphasis role="strong">重新初始化数据中心</emphasis>
+  </para>
+  <orderedlist numeration="arabic">
+    <listitem>
+      <para>
+        点击<emphasis role="strong">数据中心</emphasis>标签，选择要重新初始化的数据中心。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        确保附加到该数据中心的存储域处于维护模式。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        右击该数据中心，选择<emphasis role="strong">重新初始化数据中心</emphasis>，打开<emphasis role="strong">数据中心重新初始化</emphasis>窗口。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        <emphasis role="strong">数据中心重新初始化</emphasis>窗口会列出所有可用的存储域(维护模式)，从中选择你想要附加的存储域。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        选择<emphasis role="strong">批准操作</emphasis>。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        点击<emphasis role="strong">确定</emphasis>重新初始化该数据中心。
+      </para>
+    </listitem>
+  </orderedlist>
+  <formalpara><title>结果</title><para></para></formalpara>
+  <para>
+    您所选择的存储域被作为主数据域加入到数据中心。您现在可以为这个主数据域导入备份的（或导出的）虚拟机或模板。
+  </para>
+</section>

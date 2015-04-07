@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE section [
+<!ENTITY % openstack SYSTEM "../administrator-guide.ent">
+%openstack;
+]>
+
+<section xmlns="http://docbook.org/ns/docbook" xml:id="创建一个网络服务质量">
+  <title>创建一个网络服务质量</title>
+  <para>
+    创建一个网络服务质量并将其应用到一个虚拟网络接口控制器配置集（也成为虚拟机网络接口配置集）中来规范网络流量。
+  </para>
+  <para>
+    <emphasis role="strong">创建一个网络服务质量</emphasis>
+  </para>
+  <orderedlist numeration="arabic">
+    <listitem>
+      <para>
+        点击<emphasis role="strong">数据中心</emphasis>资源标签并选择一个数据中心。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        在详情面板中点击 <emphasis role="strong">QoS</emphasis> 标签。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        点击<emphasis role="strong">网络 QoS</emphasis>。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        点击<emphasis role="strong">新建</emphasis>。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        在<emphasis role="strong">名称</emphasis>项中输入网络服务质量的名称。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        输入<emphasis role="strong">转入的</emphasis>和<emphasis role="strong">转出的</emphasis>网络流量的限制值。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        点击<emphasis role="strong">确定</emphasis>。
+      </para>
+    </listitem>
+  </orderedlist>
+  <para>
+    您已经成功的创建了一个网络服务质量，它可以应用在虚拟网络接口控制器中。
+  </para>
+</section>

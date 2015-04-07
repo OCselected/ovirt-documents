@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE section [
+<!ENTITY % openstack SYSTEM "../administrator-guide.ent">
+%openstack;
+]>
+
+<section xmlns="http://docbook.org/ns/docbook" xml:id="删除逻辑网络">
+  <title>删除逻辑网络</title>
+  <formalpara><title>概述</title><para></para></formalpara>
+  <para>
+    删除一个逻辑网络
+  </para>
+  <para>
+    <emphasis role="strong">删除逻辑网络</emphasis>
+  </para>
+  <orderedlist numeration="arabic">
+    <listitem>
+      <para>
+        使用<emphasis role="strong">数据中心</emphasis>资源标签、树形面板或者搜索功能来查找并选择要删除逻辑网络所在的数据中心。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        在详情面板中点击<emphasis role="strong">逻辑网络</emphasis>子标签，列出对应所选数据中心的所有逻辑网络。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        选择要删除的逻辑网络并点击<emphasis role="strong">删除</emphasis>，打开<emphasis role="strong">删除逻辑网络</emphasis>窗口。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        勾选<emphasis role="strong">也从外部供应商里删除网络</emphasis>，删除从管理端和外部供应商提供的逻辑网络。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        点击<emphasis role="strong">确定</emphasis>按钮删除该逻辑网络。
+      </para>
+    </listitem>
+  </orderedlist>
+  <formalpara><title>结果</title><para></para></formalpara>
+  <para>
+    您成功地从管理端删除了该逻辑网络，它将不再可用。如果这个逻辑网络是外部供应商提供的并且你已勾选了<emphasis>也从外部供应商里删除网络</emphasis>，外部供应商提供的网络也不再可用。
+  </para>
+</section>

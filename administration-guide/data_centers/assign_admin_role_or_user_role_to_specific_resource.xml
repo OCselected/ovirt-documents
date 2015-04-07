@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE section [
+<!ENTITY % openstack SYSTEM "../administrator-guide.ent">
+%openstack;
+]>
+
+<section xmlns="http://docbook.org/ns/docbook" xml:id="为数据中心分配管理员或者用户角色">
+  <title>为数据中心分配管理员或者用户角色</title>
+  <formalpara><title>概述</title><para></para></formalpara>
+  <para>
+    为数据中心分配管理员或者用户角色，使得用户能够管理或者使用该资源。
+  </para>
+  <para>
+    使用主面板中的资源标签、树形面板或者搜索功能来查找并在主面板中选择相应的资源。
+  </para>
+  <para>
+    <emphasis role="strong">为特定资源分配管理员或者用户角色</emphasis>
+  </para>
+  <orderedlist numeration="arabic">
+    <listitem>
+      <para>
+        在详情面板中点击<emphasis role="strong">权限</emphasis>子标签，列出对于所选择资源已分配的用户和角色，以及其从上层资源继承而来的权限。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        点击<emphasis role="strong">添加</emphasis>按钮打开<emphasis role="strong">为用户添加权限</emphasis>窗口。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        在<emphasis role="strong">搜索</emphasis>文本框中输入用户的姓名或者登录用户名然后点击<emphasis role="strong">执行</emphasis>。在结果列表中显示出的符合搜索条件的用户中进行选择。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        从<emphasis role="strong">要分配的角色</emphasis>下拉菜单中选择一个角色。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        点击<emphasis role="strong">确定</emphasis>按钮分配角色并关闭该窗口。
+      </para>
+    </listitem>
+  </orderedlist>
+  <formalpara><title>结果</title><para></para></formalpara>
+  <para>
+    您成功地为一个用户分配了角色；该用户对于该资源及其下属的其它资源都具备该角色的权限。
+  </para>
+</section>

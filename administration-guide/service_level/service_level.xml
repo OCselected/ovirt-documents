@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE section [
+<!ENTITY % openstack SYSTEM "../administrator-guide.ent">
+%openstack;
+]>
+<chapter xmlns="http://docbook.org/ns/docbook"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  version="5.0"
+  xml:id="service_level_service_level">
+  <title>服务质量</title>
+  <xi:include href="service_level_storage.xml"/>
+  <xi:include href="network_service_level.xml"/>
+  <xi:include href="cpu_service_level.xml"/>
+</chapter>

@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE section [
+<!ENTITY % openstack SYSTEM "../administrator-guide.ent">
+%openstack;
+]>
+
+<section xmlns="http://docbook.org/ns/docbook" xml:id="创建数据中心">
+  <title>创建数据中心</title>
+  <formalpara><title>概述</title><para /></formalpara>
+  <para>
+    下面的步骤描述怎样在 oVirt
+    环境中新建一个数据中心。一个数据中心至少需要一个集群，一个主机，一个存储域才能正常工作。
+  </para>
+  <note>
+    <para>
+      创建了数据中心之后，在添加第一个存储域到数据中心之前，可以在任何时候编辑数据中心设置该数据中心的<emphasis role="strong">存储类型</emphasis>。但是一旦数据中心里面附加了存储，那么该数据中心的<emphasis role="strong">存储类型</emphasis>就不能修改了。
+    </para>
+  </note>
+  <para>
+    <emphasis role="strong">创建数据中心</emphasis>
+  </para>
+  <orderedlist numeration="arabic">
+    <listitem>
+      <para>
+        在管理界面上选择<emphasis role="strong">数据中心</emphasis>标签，列出目前所有的数据中心。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        点击<emphasis role="strong">新建</emphasis>按钮，打开<emphasis role="strong">新建数据中心</emphasis>窗口。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        输入数据中心的<emphasis role="strong">名称</emphasis>和<emphasis role="strong">描述</emphasis>。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        从下拉菜单中选择适当的<emphasis role="strong">类型</emphasis>，<emphasis role="strong">兼容版本</emphasis>和<emphasis role="strong">配额模式</emphasis>，根据需要填写相关的<emphasis role="strong">注释</emphasis>。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        点击<emphasis role="strong">确定</emphasis>创建数据中心，打开<emphasis role="strong">创建数据中心-引导操作</emphasis>窗口。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        <emphasis role="strong">引导操作</emphasis>会引导用户配置数据中心需要的资源，比如集群，主机等。如果这些资源还没有准备好，或者用户想以后再配置，点击<emphasis role="strong">以后再配置</emphasis>按钮。之后，用户可以在任何时候选择该数据中心再点击<emphasis role="strong">引导操作</emphasis>按钮配置该数据中心剩余的配置项。
+      </para>
+    </listitem>
+  </orderedlist>
+  <formalpara><title>结果</title><para /></formalpara>
+  <para>
+    数据中心已经创建好了，如果没有把存储，主机，集群配置好，那么现在它处于
+    <emphasis role="strong">Uninitialized</emphasis>
+    状态。使用<emphasis role="strong">引导操作</emphasis>来完成所有的配置。
+  </para>
+</section>

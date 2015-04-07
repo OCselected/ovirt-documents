@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE section [
+<!ENTITY % openstack SYSTEM "../administrator-guide.ent">
+%openstack;
+]>
+
+<section xmlns="http://docbook.org/ns/docbook" xml:id="更改数据中心的兼容版本">
+  <title>更改数据中心的兼容版本</title>
+  <formalpara><title>概述</title><para /></formalpara>
+  <para>
+    oVirt 企业级虚拟化数据中心有一个兼容版本。这个兼容版本指示 oVirt
+    企业级虚拟化数据中心需兼容的版本，且数据中心里的所有集群必须支持这个兼容水平。
+  </para>
+  <note>
+    <para>
+      更改数据中心的兼容版本之前，首先需要更新数据中心里的所有集群，使其可以支持所需的兼容水平。
+    </para>
+  </note>
+  <para>
+    使用管理员用户登录管理门户，默认用户是
+    <emphasis role="strong">admin</emphasis>。
+  </para>
+  <para>
+    <emphasis role="strong">更改数据中心的兼容版本</emphasis>
+  </para>
+  <orderedlist numeration="arabic">
+    <listitem>
+      <para>
+        请您以管理员的身份登录到管理员门户。默认情况下，admin
+        用户就是管理员。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        点击<emphasis role="strong">数据中心</emphasis>标签。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        在显示的数据中心列表中选择要更改的数据中心。如果这个列表过长导致难以过滤，可以使用搜索工具来定位所需的数据中心。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        点击<emphasis role="strong">编辑</emphasis>按钮
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        更改所需的<emphasis role="strong">兼容版本</emphasis>。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        点击<emphasis role="strong">确定</emphasis>。
+      </para>
+    </listitem>
+  </orderedlist>
+  <formalpara><title>结果</title><para /></formalpara>
+  <para>
+    您已更改了数据中心的兼容版本。
+  </para>
+  <warning>
+    <para>
+      升级数据中心兼容版本值也需要升级属于这个数据中心的存储域。如果您把数据中心兼容版本值从
+      3.1 以前的版本升级为更高的版本，那些使用 3.1
+      以前版本的存储域将无法使用。
+    </para>
+  </warning>
+</section>

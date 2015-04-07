@@ -29,7 +29,8 @@
             <emphasis role="strong">名称</emphasis>
           </para></entry>
           <entry><para>
-            集群策略的名称。用于 oVirt 虚拟化管理中心索引集群策略。
+            集群策略的名称。用于 oVirt
+            企业级虚拟化管理中心索引集群策略。
           </para></entry>
         </row>
         <row>

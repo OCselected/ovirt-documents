@@ -1,0 +1,8 @@
+<section xmlns="http://docbook.org/ns/docbook"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  version="5.0">
+<title>存储服务质量</title>
+  <xi:include href="create_storage_service_level.xml"/>
+  <xi:include href="delete_storage_service_level.xml"/>
+</section>

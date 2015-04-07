@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE section [
+<!ENTITY % openstack SYSTEM "../administrator-guide.ent">
+%openstack;
+]>
+
+<section xmlns="http://docbook.org/ns/docbook" xml:id="创建一个存储服务质量">
+  <title>创建一个存储服务质量</title>
+  <para>
+    创建一个存储服务质量
+  </para>
+  <para>
+    <emphasis role="strong">创建一个存储服务质量</emphasis>
+  </para>
+  <orderedlist numeration="arabic">
+    <listitem>
+      <para>
+        点击<emphasis role="strong">数据中心</emphasis>资源标签并选择一个数据中心。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        点击详情面板中的 <emphasis role="strong">QoS</emphasis>。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        点击 <emphasis role="strong">Storage</emphasis>。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        点击<emphasis role="strong">新建</emphasis>。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        在 <emphasis role="strong">QoS Name</emphasis>
+        项中输入该服务质量的名称。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        在<emphasis role="strong">描述</emphasis>项中输入对该服务质量的描述信息。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        指定该服务质量的吞吐量：
+      </para>
+    </listitem>
+  </orderedlist>
+  <itemizedlist>
+    <listitem>
+      <para>
+        选择<emphasis role="strong">吞吐量</emphasis>复选框。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        在 <emphasis role="strong">Total</emphasis>
+        项中输入允许的最大吞吐量。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        在 <emphasis role="strong">Read</emphasis>
+        项中输入读操作时所允许的最大吞吐量。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        在 <emphasis role="strong">Write</emphasis>
+        项中输入写操作时所允许的最大吞吐量。
+      </para>
+    </listitem>
+  </itemizedlist>
+  <orderedlist numeration="arabic">
+    <listitem override="8">
+      <para>
+        指定输入输出服务质量：
+      </para>
+    </listitem>
+  </orderedlist>
+  <itemizedlist>
+    <listitem>
+      <para>
+        选择 <emphasis role="strong">IOps</emphasis> 复选框。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        在 <emphasis role="strong">Total</emphasis>
+        项中输入每秒钟所允许的输入输出操作的最大数量。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        在 <emphasis role="strong">Read</emphasis>
+        项中输入每秒钟所允许的输入操作的最大数量。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        在 <emphasis role="strong">Write</emphasis>
+        项中输入每秒钟所允许的输出操作的最大数量。
+      </para>
+    </listitem>
+  </itemizedlist>
+  <orderedlist numeration="arabic">
+    <listitem override="9">
+      <para>
+        点击<emphasis role="strong">确定</emphasis>。
+      </para>
+    </listitem>
+  </orderedlist>
+  <para>
+    您已经成功创建了一个存储服务质量，并可以基于这个存储服务质量在属于该数据中心的数据存储域中创建磁盘配置集。
+  </para>
+</section>

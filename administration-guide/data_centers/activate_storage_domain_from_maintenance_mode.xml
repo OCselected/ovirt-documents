@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE section [
+<!ENTITY % openstack SYSTEM "../administrator-guide.ent">
+%openstack;
+]>
+
+<section xmlns="http://docbook.org/ns/docbook" xml:id="从维护模式激活存储域">
+  <title>从维护模式激活存储域</title>
+  <formalpara><title>概述</title><para></para></formalpara>
+  <para>
+    要使用处于维护模式中的存储域，必须首先激活它。
+  </para>
+  <para>
+    <emphasis role="strong">从维护模式激活存储域</emphasis>
+  </para>
+  <orderedlist numeration="arabic">
+    <listitem>
+      <para>
+        点击<emphasis role="strong">数据中心</emphasis>标签，选择要激活存储域的数据中心。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        在该数据中心的详细信息面板中选择<emphasis role="strong">存储</emphasis>，列出已经附加到该数据中心的所有存储域。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        选择需要激活的存储域。点击<emphasis role="strong">激活</emphasis>来激活存储域。
+      </para>
+    </listitem>
+  </orderedlist>
+  <formalpara><title>结果</title><para></para></formalpara>
+  <para>
+    存储域将会激活，并可以在数据中心中被使用。
+  </para>
+</section>

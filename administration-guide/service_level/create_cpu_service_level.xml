@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE section [
+<!ENTITY % openstack SYSTEM "../administrator-guide.ent">
+%openstack;
+]>
+
+<section xmlns="http://docbook.org/ns/docbook" xml:id="创建一个-cpu-服务质量">
+  <title>创建一个 CPU 服务质量</title>
+  <para>
+    创建一个 CPU 服务质量。
+  </para>
+  <para>
+    <emphasis role="strong">创建一个 CPU 服务质量</emphasis>
+  </para>
+  <orderedlist numeration="arabic">
+    <listitem>
+      <para>
+        点击<emphasis role="strong">数据中心</emphasis>资源标签并选择一个数据中心。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        在详情面板中点击 <emphasis role="strong">QoS</emphasis>。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        点击 <emphasis role="strong">CPU</emphasis>。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        点击<emphasis role="strong">新建</emphasis>。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        在 <emphasis role="strong">QoS Name</emphasis> 项中输入 CPU
+        服务质量的名称。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        在<emphasis role="strong">描述</emphasis>项中输入该服务质量的描述信息。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        在 <emphasis role="strong">Limit</emphasis>
+        项中输入该服务质量允许的最大处理能力（以百分比的形式显示，但不要包含
+        % 符号）。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        点击<emphasis role="strong">确定</emphasis>。
+      </para>
+    </listitem>
+  </orderedlist>
+  <para>
+    您已经成功新建了一个 CPU
+    服务质量，并且可以在属于那个数据中心的集群中基于该服务质量新建 CPU
+    配置集。
+  </para>
+</section>

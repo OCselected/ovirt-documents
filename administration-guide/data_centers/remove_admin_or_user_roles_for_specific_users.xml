@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE section [
+<!ENTITY % openstack SYSTEM "../administrator-guide.ent">
+%openstack;
+]>
+
+<section xmlns="http://docbook.org/ns/docbook" xml:id="为数据中心删除管理员或者用户角色">
+  <title>为数据中心删除管理员或者用户角色</title>
+  <formalpara><title>概述</title><para></para></formalpara>
+  <para>
+    为数据中心删除管理员或者用户权限，使得该用户不能够再管理或者使用该资源及其下属的资源。
+  </para>
+  <para>
+    <emphasis role="strong">为特定资源删除管理员或者用户角色</emphasis>
+  </para>
+  <orderedlist numeration="arabic">
+    <listitem>
+      <para>
+        使用主面板中的资源标签、树形面板或者搜索功能来查找并在主面板中选择相应的资源。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        在详情面板中点击<emphasis role="strong">权限</emphasis>子标签，列出对于所选择资源已分配的用户和角色，以及其从上层资源继承而来的权限。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        选择要从该资源中删除的用户及对应角色。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        点击<emphasis role="strong">删除</emphasis>按钮将打开<emphasis role="strong">删除权限</emphasis>窗口以供您确认权限的删除。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        点击<emphasis role="strong">确定</emphasis>按钮删除该用户角色。
+      </para>
+    </listitem>
+  </orderedlist>
+  <formalpara><title>结果</title><para></para></formalpara>
+  <para>
+    您成功地从该资源中删除了一个用户所具备的角色及其对应的权限。
+  </para>
+</section>

@@ -1,0 +1,15 @@
+<section xmlns="http://docbook.org/ns/docbook"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  version="5.0">
+<title>数据中心任务</title>
+  <xi:include href="create_data_center.xml"/>
+  <xi:include href="new_edit_dc_window_settings_explained.xml"/>
+  <xi:include href="edit_resource.xml"/>
+  <xi:include href="create_logical_network_in_dc_or_cluster.xml"/>
+  <xi:include href="deleting_logical_networks.xml"/>
+  <xi:include href="re_initialize_data_centers.xml"/>
+  <xi:include href="deleting_dc.xml"/>
+  <xi:include href="force_remove_dc.xml"/>
+  <xi:include href="change_dc_compatibitity_version.xml"/>
+</section>

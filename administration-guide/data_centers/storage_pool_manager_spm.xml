@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE section [
+<!ENTITY % openstack SYSTEM "../administrator-guide.ent">
+%openstack;
+]>
+
+<section xmlns="http://docbook.org/ns/docbook" xml:id="存储池管理器spm">
+  <title>存储池管理器（SPM）</title>
+  <para>
+    存储池管理器（在本文档中会被简称为
+    SPM）是数据中心中的一个特定主机所承担的角色，它被用来管理数据中心中的存储域。SPM
+    可以在数据中心中的任何一个主机上运行，oVirt
+    企业级虚拟化管理中心会把这个角色赋予一个主机。作为 SPM
+    的主机并不需要被完全作为 SPM 使用，它也可以运行其它虚拟机资源。
+  </para>
+  <para>
+    SPM
+    通过协调存储域中的元数据（metadata）来控制对存储的访问。它的功能包括创建、删除和管理虚拟磁盘（磁盘映像）、快照、模板，以及为
+    SAN
+    上的块设备分配存储空间。为了保持元数据的可靠性，一个数据中心中只能有一个主机作为
+    SPM。
+  </para>
+  <para>
+    oVirt 企业级虚拟化管理中心会保证一直都有一个 SPM 在正常运行。当作为
+    SPM 的主机出现问题时，Red Hat Enterprise Virtualization Manager 会把
+    SPM 角色分配给另外一台主机。当启动一个 SPM
+    时，需要确保只有一个主机被赋予了这个角色，并获取一个 storage-centric
+    lease。这个过程需要花费一些时间来完成。
+  </para>
+</section>

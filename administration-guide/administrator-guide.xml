@@ -11,4 +11,6 @@
   <title>oVirt administrator guide</title>
   <xi:include href="basic_concepts/Introduction.xml"/>
   <xi:include href="using_admin_portal/using_admin_portal.xml"/>
+  <xi:include href="service_level/service_level.xml"/>
+  <xi:include href="data_centers/data_centers.xml"/>
 </book>

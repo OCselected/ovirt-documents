@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE section [
+<!ENTITY % openstack SYSTEM "../administrator-guide.ent">
+%openstack;
+]>
+
+<section xmlns="http://docbook.org/ns/docbook" xml:id="spm-优先级">
+  <title>SPM 优先级</title>
+  <para>
+    SPM 角色需要使用主机的一些资源。一个主机的 SPM
+    优先级的设定值预示着这个主机成为 SPM 的可能行：有高 SPM
+    优先级值的主机会在比有低 SPM 优先级值的主机先被授予 SPM
+    角色。因此，重要的虚拟机可以在那些有低 SPM
+    优先级的主机上运行，这样可以减少这些虚拟机和 SPM
+    角色争夺主机资源情况的出现。
+  </para>
+  <para>
+    您可以通过编辑主机来改变一个主机的 SPM 优先级。
+  </para>
+</section>

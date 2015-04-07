@@ -1,0 +1,10 @@
+<section xmlns="http://docbook.org/ns/docbook"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  version="5.0">
+<title>数据中心和权限控制</title>
+  <xi:include href="manage_system_permissions_in_dc.xml"/>
+  <xi:include href="data_center_admin_role_explained.xml"/>
+  <xi:include href="assign_admin_role_or_user_role_to_specific_resource.xml"/>
+  <xi:include href="remove_admin_or_user_roles_for_specific_users.xml"/>
+</section>

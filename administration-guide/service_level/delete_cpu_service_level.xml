@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE section [
+<!ENTITY % openstack SYSTEM "../administrator-guide.ent">
+%openstack;
+]>
+
+<section xmlns="http://docbook.org/ns/docbook" xml:id="删除一个-cpu-服务质量">
+  <title>删除一个 CPU 服务质量</title>
+  <para>
+    删除一个已经存在的 CPU 服务质量。
+  </para>
+  <para>
+    <emphasis role="strong">删除一个 CPU 服务质量</emphasis>
+  </para>
+  <orderedlist numeration="arabic">
+    <listitem>
+      <para>
+        点击<emphasis role="strong">数据中心</emphasis>资源标签并选择一个数据中心。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        在详情面板中点击 <emphasis role="strong">QoS</emphasis>。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        点击 <emphasis role="strong">CPU</emphasis>。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        选择您想要删除的那个 CPU 服务质量。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        点击<emphasis role="strong">删除</emphasis>。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        出现 <emphasis role="strong">Remove CPU QoS</emphasis>
+        的时候，点击<emphasis role="strong">确定</emphasis>。
+      </para>
+    </listitem>
+  </orderedlist>
+  <para>
+    您已经成功的删除了 CPU 服务质量，这个服务质量将不再有效。如果有 CPU
+    配置集是基于这个服务质量创建的，那么这些配置集的 CPU
+    服务质量会被自动设置为
+    <emphasis role="strong">[unlimited]</emphasis>。
+  </para>
+</section>

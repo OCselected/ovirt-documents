@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE section [
+<!ENTITY % openstack SYSTEM "../administrator-guide.ent">
+%openstack;
+]>
+
+<section xmlns="http://docbook.org/ns/docbook" xml:id="数据中心管理员角色的诠释">
+  <title>数据中心管理员角色的诠释</title>
+  <para>
+    以下表格描述了数据中心管理中的管理员角色及其相应的权限。
+  </para>
+  <table>
+    <title>数据中心权限角色</title><tgroup cols="3">
+      <colspec align="left" />
+      <colspec align="left" />
+      <colspec align="left" />
+      <thead>
+        <row>
+          <entry><para>
+            角色
+          </para></entry>
+          <entry><para>
+            权限
+          </para></entry>
+          <entry><para>
+            备注
+          </para></entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry><para>
+            <emphasis role="strong">DataCenterAdmin</emphasis>
+          </para></entry>
+          <entry><para>
+            数据中心管理员
+          </para></entry>
+          <entry><para>
+            可以使用、创建、删除和管理特定数据中心中除存储以外的所有物理和虚拟资源（包括集群、主机、模板和虚拟机）。
+          </para></entry>
+        </row>
+        <row>
+          <entry><para>
+            <emphasis role="strong">NetworkAdmin</emphasis>
+          </para></entry>
+          <entry><para>
+            网络管理员
+          </para></entry>
+          <entry><para>
+            可以配置和管理特定数据中心的网络。数据中心网络管理员同时也继承了这个数据中心中的虚拟机的网络管理员权限。
+          </para></entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
+</section>

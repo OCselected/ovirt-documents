@@ -9,7 +9,7 @@
   <formalpara><title>概述</title><para></para></formalpara>
   <para>
     你可以为 oVirt
-    虚拟化管理中心中的集群创建新的集群策略来定义分布在该集群中虚拟机的控制逻辑。
+    企业级虚拟化管理中心中的集群创建新的集群策略来定义分布在该集群中虚拟机的控制逻辑。
   </para>
   <para>
     <emphasis role="strong">创建一个集群策略</emphasis>
@@ -107,6 +107,6 @@
   </orderedlist>
   <formalpara><title>结果</title><para></para></formalpara>
   <para>
-    新的集群策略已经被创建，可以在 oVirt 虚拟化管理中心中使用了。
+    新的集群策略已经被创建，可以在 oVirt 企业级虚拟化管理中心中使用了。
   </para>
 </section>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE section [
+<!ENTITY % openstack SYSTEM "../administrator-guide.ent">
+%openstack;
+]>
+
+<section xmlns="http://docbook.org/ns/docbook" xml:id="删除一个存储服务质量">
+  <title>删除一个存储服务质量</title>
+  <para>
+    删除一个已存在的存储服务质量
+  </para>
+  <para>
+    <emphasis role="strong">删除一个存储服务质量</emphasis>
+  </para>
+  <orderedlist numeration="arabic">
+    <listitem>
+      <para>
+        点击<emphasis role="strong">数据中心</emphasis>资源标签并选择一个数据中心。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        点击详情面板中的 <emphasis role="strong">QoS</emphasis>。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        点击 <emphasis role="strong">Storage</emphasis>。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        选择您想要删除的存储服务质量。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        点击<emphasis role="strong">删除</emphasis>。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        出现<emphasis role="strong">删除存储 QoS</emphasis>
+        弹出框的时候，点击<emphasis role="strong">确定</emphasis>。
+      </para>
+    </listitem>
+  </orderedlist>
+  <para>
+    您已经成功的删除了存储服务质量，那么这个服务质量将不再有效。如果有磁盘配置集是基于这个服务质量的，那么这些个配置集的服务质量会被自动设置为<emphasis role="strong">[unlimited]</emphasis>。
+  </para>
+</section>

@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE section [
+<!ENTITY % openstack SYSTEM "../administrator-guide.ent">
+%openstack;
+]>
+
+<section xmlns="http://docbook.org/ns/docbook" xml:id="从数据中心分离存储域">
+  <title>从数据中心分离存储域</title>
+  <formalpara><title>概述</title><para /></formalpara>
+  <para>
+    从数据中心中分离一个存储域后，被分离的存储域将不再和数据中心有任何关系。被分离的存储域不会从
+    oVirt
+    企业级虚拟化管理中心环境中被删除，它还可以被附加到其它的数据中心。
+  </para>
+  <para>
+    被分离的存储域中的数据（如虚拟机和模板）仍然保存在这个存储域中。
+  </para>
+  <note>
+    <para>
+      当主存储域是唯一一个有效的存储域时，它不能被删除。
+    </para>
+  </note>
+  <para>
+    <emphasis role="strong">从数据中心分离存储域</emphasis>
+  </para>
+  <orderedlist numeration="arabic">
+    <listitem>
+      <para>
+        点击<emphasis role="strong">数据中心</emphasis>标签，选择要分离存储域的数据中心。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        在该数据中心的详细信息面板中选择<emphasis role="strong">存储</emphasis>，列出已经附加到该数据中心的所有存储域。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        选择需要分离的存储域。如果该存储域处于<emphasis role="strong">Active</emphasis>状态，则点击打开<emphasis role="strong">维护</emphasis>，会弹出<emphasis role="strong">维护存储域</emphasis>的弹出窗口。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        点击<emphasis role="strong">确定</emphasis>，将该存储域置为维护模式。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        点击<emphasis role="strong">分离</emphasis>，弹出<emphasis role="strong">分离存储</emphasis>的确认窗口。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        点击<emphasis role="strong">确定</emphasis>。
+      </para>
+    </listitem>
+  </orderedlist>
+  <formalpara><title>结果</title><para /></formalpara>
+  <para>
+    您从数据中心中分离了存储域。被分离的存储域可能会需要几分钟的时间才会从详情框中消失。
+  </para>
+</section>

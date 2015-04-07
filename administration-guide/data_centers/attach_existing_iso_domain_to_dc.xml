@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE section [
+<!ENTITY % openstack SYSTEM "../administrator-guide.ent">
+%openstack;
+]>
+
+<section xmlns="http://docbook.org/ns/docbook" xml:id="附加已存在的-iso-存储域到数据中心">
+  <title>附加已存在的 ISO 存储域到数据中心</title>
+  <formalpara><title>概述</title><para></para></formalpara>
+  <para>
+    没有附加 ISO 存储域的数据中心可以附加一个 ISO
+    存储域。注意一个数据中心只能有一个 ISO 存储域。
+  </para>
+  <para>
+    <emphasis role="strong">附加已存在的 ISO 存储域到数据中心</emphasis>
+  </para>
+  <orderedlist numeration="arabic">
+    <listitem>
+      <para>
+        点击<emphasis role="strong">数据中心</emphasis>标签，选择需要附加的数据中心。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        在该数据中心的详细信息面板中选择<emphasis role="strong">存储</emphasis>，列出已经附加到该数据中心的所有存储域。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        点击<emphasis role="strong">附加 ISO
+        </emphasis>，打开<emphasis role="strong">附加存储</emphasis>窗口。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        选择要附加的 ISO 存储域。
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        点击<emphasis role="strong">确定</emphasis>。
+      </para>
+    </listitem>
+  </orderedlist>
+  <formalpara><title>结果</title><para></para></formalpara>
+  <para>
+    ISO 存储域将会被附加到该存储域，并且会被自动激活。
+  </para>
+</section>

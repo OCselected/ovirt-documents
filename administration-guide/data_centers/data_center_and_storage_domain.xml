@@ -1,0 +1,11 @@
+<section xmlns="http://docbook.org/ns/docbook"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  version="5.0">
+<title>数据中心和存储域</title>
+  <xi:include href="attaching_data_storage_domains_to_dc.xml"/>
+  <xi:include href="attach_existing_iso_domain_to_dc.xml"/>
+  <xi:include href="attach_existing_export_domain_to_dc.xml"/>
+  <xi:include href="detach_storage_domain_from_dc.xml"/>
+  <xi:include href="activate_storage_domain_from_maintenance_mode.xml"/>
+</section>

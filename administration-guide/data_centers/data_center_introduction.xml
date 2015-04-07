@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE section [
+<!ENTITY % openstack SYSTEM "../administrator-guide.ent">
+%openstack;
+]>
+
+<section xmlns="http://docbook.org/ns/docbook" xml:id="数据中心简介">
+  <title>数据中心简介</title>
+  <para>
+    数据中心是一个逻辑实体，它定义了一组用于具体环境中的资源的集合。我们可以把数据中心看作一个容器资源，其中包含了逻辑资源（集群和主机）、网络资源（逻辑网络和物理网卡）以及存储资源（存储域）。
+  </para>
+  <para>
+    一个数据中心可以包括多个集群（每个集群可以包括多个主机），以及多个与它相关联的存储域。数据中心上的每个主机可以支持多个虚拟机。一个
+    oVirt
+    企业级虚拟化环境可以包括多个数据中心，用户通过数据中心的结构把多个数据中心分离开。
+  </para>
+  <para>
+    所有的数据中心都可以同意一个管理门户进行管理。
+  </para>
+  <figure>
+    <title>数据中心架构</title>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="../images/data-center.png" format="PNG" scale="100" />
+      </imageobject>
+      <textobject><phrase>数据中心架构</phrase></textobject>
+    </mediaobject>
+  </figure>
+  <para>
+    在 oVirt
+    企业级虚拟化管理中心在安装的时候会自动生成一个默认的数据中心，请不要删除它。如果需要，您可以创建一个新的数据中心并给它一个适当的名字。
+  </para>
+  <figure>
+    <title>数据中心对象</title>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="../images/data-center-object.png" format="PNG" scale="100" />
+      </imageobject>
+      <textobject><phrase>数据中心对象</phrase></textobject>
+    </mediaobject>
+  </figure>
+</section>

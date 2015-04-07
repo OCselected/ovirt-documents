@@ -8,7 +8,7 @@
   <title>删除实例类型</title>
   <formalpara><title>概述</title><para></para></formalpara>
   <para>
-    从 oVirt 虚拟化管理中心删除一个实例类型。
+    从 oVirt 企业级虚拟化管理中心删除一个实例类型。
   </para>
   <para>
     <emphasis role="strong">删除实例类型</emphasis>

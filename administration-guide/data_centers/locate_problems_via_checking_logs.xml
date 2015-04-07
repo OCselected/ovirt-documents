@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE section [
+<!ENTITY % openstack SYSTEM "../administrator-guide.ent">
+%openstack;
+]>
+
+<section xmlns="http://docbook.org/ns/docbook" xml:id="通过查看事件来定位问题">
+  <title>通过查看事件来定位问题</title>
+  <para>
+    <emphasis role="strong">事件</emphasis>标签页显示了和这个数据中心相关的所有事件。这些事件包括审计、警告和错误。它们可以帮助您找出
+    oVirt 企业级虚拟化管理中心环境中可能存在问题的项。
+  </para>
+  <para>
+    <emphasis role="strong">事件</emphasis>标签页有两个显示模式：基本模式和高级模式。基本模式会显示事件的图标、事件发生的时间和描述。高级模式除了显示基本模式所显示的信息外，还会显示事件的
+    ID、相应的用户、主机、虚拟机、模板、数据中心、存储、集群，以及
+    Gluster 卷和相关 ID。
+  </para>
+  <figure>
+    <title>事件视图</title>
+    <mediaobject>
+      <imageobject>
+        <imagedata fileref="../images/data-center-event-view.png" format="PNG" scale="100" />
+      </imageobject>
+      <textobject><phrase>事件视图</phrase></textobject>
+    </mediaobject>
+  </figure>
+</section>

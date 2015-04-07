@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!DOCTYPE section [
+<!ENTITY % openstack SYSTEM "../administrator-guide.ent">
+%openstack;
+]>
+<chapter xmlns="http://docbook.org/ns/docbook"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  version="5.0"
+  xml:id="data_centers_data_centers">
+  <title>数据中心</title>
+  <xi:include href="data_center_introduction.xml"/>
+  <xi:include href="storage_pool_manager_spm.xml"/>
+  <xi:include href="spm_priority.xml"/>
+  <xi:include href="locate_problems_via_checking_logs.xml"/>
+  <xi:include href="data_center_tasks.xml"/>
+  <xi:include href="data_center_and_storage_domain.xml"/>
+  <xi:include href="dc_and_permissions_controll.xml"/>
+</chapter>

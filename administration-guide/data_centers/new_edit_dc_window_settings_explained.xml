@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE section [
+<!ENTITY % openstack SYSTEM "../administrator-guide.ent">
+%openstack;
+]>
+
+<section xmlns="http://docbook.org/ns/docbook" xml:id="新建编辑数据中心窗口设置的解释">
+  <title>新建、编辑数据中心窗口设置的解释</title>
+  <para>
+    下表详细描述了在<emphasis role="strong">新建数据中心</emphasis>或者<emphasis role="strong">编辑数据中心</emphasis>窗口中的设置项目。错误的输入值项目的边框将会在您点击<emphasis role="strong">确定</emphasis>时变为橙色表示该输入不被接受，还将提示您该项目的预期输入值或者值范围。
+  </para>
+  <table>
+    <title>数据中心属性</title><tgroup cols="2">
+      <colspec align="left" />
+      <colspec align="left" />
+      <thead>
+        <row>
+          <entry><para>
+            项目
+          </para></entry>
+          <entry><para>
+            详细描述
+          </para></entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry><para>
+            <emphasis role="strong">名称</emphasis>
+          </para></entry>
+          <entry><para>
+            数据中心的名字。它最长支持 40
+            个字符，可以包括大小写字母、数字、分号和下划线。数据中心的名字必须是唯一的。
+          </para></entry>
+        </row>
+        <row>
+          <entry><para>
+            <emphasis role="strong">描述</emphasis>
+          </para></entry>
+          <entry><para>
+            数据中心的描述。这个项可以是空，但我们推荐您在这个项中输入相关的信息。
+          </para></entry>
+        </row>
+        <row>
+          <entry><para>
+            <emphasis role="strong">类型</emphasis>
+          </para></entry>
+          <entry><para>
+            存储类型，从以下选择其一：<itemizedlist><listitem><para><emphasis role="strong">共享的</emphasis></para></listitem><listitem><para><emphasis role="strong">本地的</emphasis></para></listitem></itemizedlist>存储域的类型对数据中心的类型有很大的影响，它在创建后将很难进行修改。尽管多种不同类型的存储域（iSCSI、NFS、FC、POSIX
+            和
+            Gluster）可以被添加到同一个数据中心中，“本地的”和“共享的”类型不能同时存在于一个数据中心中。
+          </para></entry>
+        </row>
+        <row>
+          <entry><para>
+            <emphasis role="strong">兼容版本</emphasis>
+          </para></entry>
+          <entry><para>
+            目前有以下兼容的版本<itemizedlist><listitem><para><emphasis role="strong">3.0</emphasis></para></listitem><listitem><para><emphasis role="strong">3.1</emphasis></para></listitem><listitem><para><emphasis role="strong">3.2</emphasis></para></listitem><listitem><para><emphasis role="strong">3.3</emphasis></para></listitem><listitem><para><emphasis role="strong">3.4</emphasis></para></listitem><listitem><para><emphasis role="strong">3.5</emphasis></para></listitem></itemizedlist>在升级了
+            oVirt 企业级虚拟化管理中心
+            后，主机、集群和数据中心可能还在使用以前的版本。因此，在升级数据中心的兼容版本前，请确认您已经升级了所有主机和集群。
+          </para></entry>
+        </row>
+        <row>
+          <entry><para>
+            <emphasis role="strong">配额模式</emphasis>
+          </para></entry>
+          <entry><para>
+            配额是 oVirt
+            企业级虚拟化管理中心提供的资源限制工具。有以下的类型可以选择：<itemizedlist><listitem><para><emphasis role="strong">禁用的</emphasis>
+            -
+            如果您不想要使用配额则选择此项目</para></listitem><listitem><para><emphasis role="strong">审计</emphasis>
+            -
+            选择此项以编辑配额设置</para></listitem><listitem><para><emphasis role="strong">强制的</emphasis>
+            - 选择此项以启用配额</para></listitem></itemizedlist>
+          </para></entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
+</section>

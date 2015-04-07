@@ -4,8 +4,8 @@
 %openstack;
 ]>
 
-<section xmlns="http://docbook.org/ns/docbook" xml:id="管理和维护-ovirt-环境">
-  <title>管理和维护 oVirt 环境</title>
+<section xmlns="http://docbook.org/ns/docbook" xml:id="管理和维护-ovirt-企业级虚拟化管理中心">
+  <title>管理和维护 oVirt 企业级虚拟化管理中心</title>
   <para>
     oVirt
     企业级虚拟化环境需要一个系统管理员来维持整个系统的良好运行。作为一个系统管理员，他的任务包括:
